@@ -1,0 +1,51 @@
+body {
+  display: flex;
+  background-color: aqua;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.container {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  border-radius: 60px;
+  transition: 0.5s;
+  overflow: hidden;
+}
+.container.active {
+  width: 360px;
+  transform: translateX(150px);
+}
+.container .icon {
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container .icon .search {
+  font-size: 21px;
+  cursor: pointer;
+}
+
+.container .input {
+  position: relative;
+  width: 300px;
+  height: 60px;
+  left: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .input input {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 18px;
+  outline: none;
+}
